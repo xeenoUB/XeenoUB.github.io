@@ -1,18 +1,18 @@
-/* Reset  */
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body  */
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: white;
 }
 
-/* Header  */
+/* Header styles */
 header {
     background-color: #1e1e1e;
     padding: 20px;
@@ -42,7 +42,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Hero section  */
+/* Hero section styles */
 .hero {
     background-color: #282c34;
     text-align: center;
@@ -66,20 +66,20 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/*  section  */
+/* Content section styles */
 .content {
     padding: 50px 20px;
     text-align: center;
 }
 
-/* Footer  */
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #1e1e1e;
 }
 
-/*  button */
+/* Basic styles for buttons */
 .button {
     padding: 10px 20px;
     margin: 10px;
@@ -96,40 +96,42 @@ footer {
     background-color: #0056b3;
 }
 
-/* Game box */
+/* Game List Styles */
 .game-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the game boxes */
+    padding: 20px;
 }
 
 .game {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  width: 200px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  color: white; /* text of the game */
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white; /* Make game text white */
 }
 
 .game img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 .game button {
-  background-color: #000000;
-  color: white; /* text */
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+    background-color: #000000;
+    color: white; /* Make button text white */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .game button:hover {
-  background-color: #000000;
+    background-color: #000000; /* Retain black on hover */
 }
