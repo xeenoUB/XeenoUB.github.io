@@ -99,21 +99,22 @@ footer {
 /* Game List Styles */
 .game-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row; /* Aligns the items horizontally (default behavior) */
+    justify-content: flex-start; /* Aligns the items to the left */
     gap: 20px;
-    justify-content: center; /* Centers the games in the container */
+    overflow-x: auto; /* Adds horizontal scrolling if the games overflow the container */
   }
   
   .game {
     background-color: rgb(0, 0, 0);
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 20px; /* Increased padding for a larger box */
+    padding: 20px;
     text-align: center;
-    width: 300px; /* Increased width for bigger boxes */
+    width: 300px; /* Keeps the width for each game box */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: white; /* Make game text white */
-    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+    transition: transform 0.3s ease;
   }
   
   .game:hover {
@@ -133,10 +134,11 @@ footer {
     padding: 12px 20px; /* Increased padding for larger buttons */
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 15px; /* Increased space above the button */
+    margin-top: 15px;
   }
   
   .game button:hover {
     background-color: #333; /* Slightly lighter black on hover */
   }
+  
   
