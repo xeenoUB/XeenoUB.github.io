@@ -98,38 +98,45 @@ footer {
 
 /* Game List Styles */
 .game-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.game {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  width: 200px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  color: white; /* Make game text white */
-}
-
-.game img {
-  width: 120%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.game button {
-  background-color: #000000;
-  color: white; /* Make button text white */
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.game button:hover {
-  background-color: #000000;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the games in the container */
+  }
+  
+  .game {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Increased padding for a larger box */
+    text-align: center;
+    width: 300px; /* Increased width for bigger boxes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white; /* Make game text white */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+  }
+  
+  .game:hover {
+    transform: scale(1.05); /* Slightly scale up the box on hover */
+  }
+  
+  .game img {
+    width: 100%; /* Adjusted image width to fill container */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .game button {
+    background-color: #000000;
+    color: white; /* Make button text white */
+    border: none;
+    padding: 12px 20px; /* Increased padding for larger buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Increased space above the button */
+  }
+  
+  .game button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+  }
+  
