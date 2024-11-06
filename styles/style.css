@@ -96,47 +96,46 @@ footer {
     background-color: #0056b3;
 }
 
-/* Game List Styles */
-.game-list {
-  display: flex;
-  flex-direction: row; /* Aligns the items horizontally (default behavior) */
-  justify-content: flex-start; /* Aligns the items to the left */
-  gap: 20px;
-  overflow-x: auto; /* Adds horizontal scrolling if the games overflow the container */
-}
+ /* games section */
+ .games {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-.game {
-  background-color: rgb(0, 0, 0);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  width: 300px; /* Increased width for bigger boxes */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  color: white; /* Make game text white */
-  transition: transform 0.3s ease;
-}
+  .games h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+  }
 
-.game:hover {
-  transform: scale(1.05); /* Slightly scale up the box on hover */
-}
+  .games p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
 
-.game img {
-  width: 100%; /* Adjusted image width to fill container */
-  height: auto;
-  border-radius: 8px;
-}
+  .games img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
 
-.game button {
-  background-color: #000000;
-  color: white; /* Make button text white */
-  border: none;
-  padding: 12px 20px; /* Increased padding for larger buttons */
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px; /* Increased space above the button */
-}
+  .games .button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
 
-.game button:hover {
-  background-color: #333; /* Slightly lighter black on hover */
-}
+  .games .button:hover {
+    background-color: #45a049;
+  }
