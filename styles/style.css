@@ -1,224 +1,261 @@
 /* Reset styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background for the body */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 /* Header styles */
 header {
-    background-color: #1e1e1e;
-    padding: 20px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  width: 100%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav h1 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-    color: #61dafb;
-    text-decoration: none;
+  color: #61dafb;
+  text-decoration: none;
 }
 
 /* Hero section styles */
 .hero {
-    background-color: #282c34;
-    text-align: center;
-    padding: 100px 20px;
+  background-color: #282c34;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero h2 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .hero p {
-    font-size: 20px;
-    margin: 20px 0;
+  font-size: 20px;
+  margin: 20px 0;
 }
 
 .cta-button {
-    background-color: #61dafb;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+  background-color: #61dafb;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 /* Content section styles */
 .content {
-    padding: 50px 20px;
-    text-align: center;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 /* Footer styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  width: 100%;
 }
 
 /* Basic styles for buttons */
 .button {
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: #000000;
-    color: white;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
- /* games section */
- .games {
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 1300px;
-    background-color: #f4f4f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+/* Games section styles */
+.games {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1300px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  .games h2 {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-  }
+.games h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
 
-  .games p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-  }
+.games p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
 
-  .games img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
-  }
+.games img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
 
-  .games .button {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
+.games .button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
 
-  .games .button:hover {
-    background-color: #45a049;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #3b3b3b;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-  }
+.games .button:hover {
+  background-color: #45a049;
+}
 
-  h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-  }
+/* Game Box Container */
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 20px;
+}
 
-  /* Game Box Container */
-  .game-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 20px;
-  }
+/* Individual Game Box */
+.game-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
 
-  /* Individual Game Box */
-  .game-box {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-  }
+.game-box:hover {
+  transform: scale(1.05);
+}
 
-  .game-box:hover {
-    transform: scale(1.05);
-  }
+.game-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
 
-  .game-box img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 2px solid #eee;
-  }
+.game-box .game-details {
+  padding: 15px;
+}
 
-  .game-box .game-details {
-    padding: 15px;
-  }
+.game-box h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
 
-  .game-box h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-  }
+.game-box p {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
 
-  .game-box p {
-    font-size: 14px;
-    color: #777;
-    text-align: center;
-  }
+/* Button in game box */
+.game-box .button {
+  display: block;
+  width: 100%;
+  background-color: #ff8e8e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
 
-  /* Button */
-  .game-box .button {
-    display: block;
-    width: 100%;
-    background-color: #ff8e8e;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    margin-top: 15px;
-    transition: background-color 0.3s;
-  }
+.game-box .button:hover {
+  background-color: #4d4d4d;
+}
 
-  .game-box .button:hover {
-    background-color: #4d4d4d;
-  }
+/* Horizontal Scrolling for Games */
+.game-container {
+  display: flex;
+  justify-content: flex-start;  /* Aligns items to the left */
+  gap: 20px;  /* Space between game boxes */
+  flex-wrap: nowrap;  /* Prevents items from wrapping, stays in one row */
+  overflow-x: auto; /* Allows horizontal scrolling if the games overflow */
+  padding: 10px;
+}
+
+.game-box {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.game-box h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}

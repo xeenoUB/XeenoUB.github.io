@@ -3,35 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xeenoUB</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>Games</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <h1>Games Section</h1>
         <nav>
-            <h1>xeenoUB</h1>
             <ul>
-made by  arlo
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero" id="site">
-        <h2>Welcome to XeenoUB</h2>
-        <p>scroll down to see your options</p>
-        <button class="button" onclick="window.location.href='c'">action</button>
-        <button class="button" onclick="window.location.href='c'">puzzle</button>
-        <button class="button" onclick="window.location.href='c'">outher</button>
-    </section>
 
-    <section class="content" id="site">
+    <main>
+        <section class="game-container">
+            <div class="game-box">
+                <img src="https://placehold.co/150x150" alt="Game 1" class="game-image">
+                <h3>Game 1</h3>
+                <button onclick="startGame1()">Start Game 1</button>
+            </div>
+            <div class="game-box">
+                <img src="https://placehold.co/150x150" alt="Game 2" class="game-image">
+                <h3>Game 2</h3>
+                <button onclick="startGame2()">Start Game 2</button>
+            </div>
+            <div class="game-box">
+                <img src="https://placehold.co/150x150" alt="Game 3" class="game-image">
+                <h3>Game 3</h3>
+                <button onclick="startGame3()">Start Game 3</button>
+            </div>
+                        <div class="game-box">
+                <img src="https://placehold.co/150x150" alt="Game 3" class="game-image">
+                <h3>Game 3</h3>
+                <button onclick="startGame3()">Start Game 3</button>
+            </div>
+                        <div class="game-box">
+                <img src="https://placehold.co/150x150" alt="Game 3" class="game-image">
+                <h3>Game 3</h3>
+                <button onclick="startGame3()">Start Game 3</button>
+            </div>
+            
+            <!-- Add more game boxes as needed -->
+        </section>
+    </main>
 
-    hi this is a test
-    </section>
     <footer>
-        <p>&copy; an unblocked games site. All rights reserved.</p>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
+
     <script>
-        // You can add more JavaScript functions here for additional interactivity
+        function startGame1() {
+            alert("Starting Game 1...");
+        }
+        function startGame2() {
+            alert("Starting Game 2...");
+        }
+        function startGame3() {
+            alert("Starting Game 3...");
+        }
     </script>
 </body>
 </html>
