@@ -45,7 +45,7 @@ nav ul .button:hover {
 /* Game container layout */
 .game-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 columns per row */
+    grid-template-columns: repeat(6, 1fr);  /* 3 columns per row */
     gap: 1rem;  /* Space between items */
     padding: 2rem;
     justify-items: center;  /* Center game boxes */
