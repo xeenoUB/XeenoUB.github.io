@@ -91,3 +91,16 @@ footer {
         grid-template-columns: 1fr;  /* 1 column on very small screens */
     }
 }
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
