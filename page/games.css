@@ -45,7 +45,7 @@ nav ul .button:hover {
 /* Game container layout */
 .game-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);  /* 3 columns per row */
+    grid-template-columns: repeat(6, 1fr);  /* 6 columns per row */
     gap: 1rem;  /* Space between items */
     padding: 2rem;
     justify-items: center;  /* Center game boxes */
@@ -80,17 +80,20 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 @media (max-width: 768px) {
     .game-container {
-        grid-template-columns: repeat(2, 1fr);  /* 2 columns on smaller screens */
+        grid-template-columns: repeat(3, 1fr);  /* 3 columns on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .game-container {
-        grid-template-columns: 1fr;  /* 1 column on very small screens */
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on very small screens */
     }
 }
+
+/* Button styles */
 button {
     padding: 10px 20px;
     font-size: 14px;
@@ -99,8 +102,8 @@ button {
     background-color: #333;
     color: white;
     border-radius: 5px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #555;
-  }
+}
